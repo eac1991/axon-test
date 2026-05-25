@@ -1,0 +1,28 @@
+FIGMA COMPONENT CONTEXT
+
+Exported component: Button
+File: DS | Components
+Page: WIP - Button
+
+This file contains the exported Figma component context for the Button component, including:
+- Structure
+- Style
+- Tokens
+- Accessibility
+- Documentation metadata
+- Variant definitions
+
+Example variants:
+- Kind=Primary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=True
+- Kind=Secondary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=True
+- Kind=Ghost, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=True
+
+The component uses:
+- Auto Layout
+- Semantic tokens
+- Typography tokens
+- Color variables
+- Icon instances
+- Variant properties
+
+Source file imported from attached Figma export context.
