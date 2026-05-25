@@ -127,6 +127,14 @@ The token structure includes:
 
 ---
 
+# Token Variable Mapping
+
+| Variable ID | Token | Semantic Name | Native Value |
+|---|---|---|---|
+| VariableID:01cf4c070149d583e71b0c20ed775dd8e279e87b/23:293 | ds.color.content.inverse | Inverse text color | #FFFFFF |
+
+---
+
 # Notes
 
 These tokens are intended to be consumed by Axon in order to:
