@@ -1,0 +1,1807 @@
+{
+  "schemaVersion": "ai-fragmented-raw-v1",
+  "exportType": "figma-ai-fragmented-raw-variants",
+  "component": {
+    "id": "9:224",
+    "name": "Button",
+    "type": "COMPONENT_SET",
+    "description": "## Aliases\n- button\n- botón\n- btn\n- cta\n- call to action\n- llamada a la acción\n- action button\n- botón de acción\n- primary action\n- acción principal\n- submit\n- enviar\n- confirmar\n- aceptar\n- guardar\n- continuar\n- cancelar\n- cerrar",
+    "documentationLinks": [],
+    "componentPropertyDefinitions": {
+      "↩︎ Icon#23:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon#24:97": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "31:956",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "4bf314b9aaacb89530c7414f708aac9418e2d6a6"
+          }
+        ]
+      },
+      "Kind": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Secondary",
+          "Ghost"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Pressed"
+        ]
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Medium",
+        "variantOptions": [
+          "Medium",
+          "Large"
+        ]
+      },
+      "Disabled": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Danger": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Label": {
+        "type": "VARIANT",
+        "defaultValue": "True",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      }
+    }
+  },
+  "variants": [
+    {
+      "id": "9:223",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "12:279",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "10:236",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "12:281",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "10:253",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "12:283",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "10:255",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "12:285",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "12:224",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:379",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "9:221",
+      "name": "Kind=Primary, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1177",
+      "name": "Kind=Primary, State=Hover, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "13:1286",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:287",
+      "name": "Kind=Primary, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1179",
+      "name": "Kind=Primary, State=Hover, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1311",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:257",
+      "name": "Kind=Secondary, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1182",
+      "name": "Kind=Secondary, State=Hover, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "13:1294",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:289",
+      "name": "Kind=Secondary, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1184",
+      "name": "Kind=Secondary, State=Hover, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1323",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:238",
+      "name": "Kind=Primary, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1187",
+      "name": "Kind=Primary, State=Hover, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "13:1290",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:291",
+      "name": "Kind=Primary, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1189",
+      "name": "Kind=Primary, State=Hover, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1317",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:228",
+      "name": "Kind=Ghost, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1192",
+      "name": "Kind=Ghost, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:381",
+      "name": "Kind=Ghost, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1194",
+      "name": "Kind=Ghost, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:259",
+      "name": "Kind=Secondary, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1197",
+      "name": "Kind=Secondary, State=Hover, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "13:1298",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:293",
+      "name": "Kind=Secondary, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1199",
+      "name": "Kind=Secondary, State=Hover, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1329",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:263",
+      "name": "Kind=Secondary, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1202",
+      "name": "Kind=Secondary, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:295",
+      "name": "Kind=Secondary, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1204",
+      "name": "Kind=Secondary, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "9:222",
+      "name": "Kind=Primary, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1207",
+      "name": "Kind=Primary, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:297",
+      "name": "Kind=Primary, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1209",
+      "name": "Kind=Primary, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:240",
+      "name": "Kind=Primary, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1212",
+      "name": "Kind=Primary, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:299",
+      "name": "Kind=Primary, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1214",
+      "name": "Kind=Primary, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:226",
+      "name": "Kind=Ghost, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1217",
+      "name": "Kind=Ghost, State=Hover, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:1302",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:383",
+      "name": "Kind=Ghost, State=Hover, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1219",
+      "name": "Kind=Ghost, State=Hover, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1335",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:261",
+      "name": "Kind=Secondary, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1222",
+      "name": "Kind=Secondary, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:301",
+      "name": "Kind=Secondary, State=Pressed, Size=Medium, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1224",
+      "name": "Kind=Secondary, State=Pressed, Size=Large, Disabled=False, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:230",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1227",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:385",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1229",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:237",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:387",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "12:239",
+      "name": "Kind=Ghost, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1237",
+      "name": "Kind=Ghost, State=Hover, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:1306",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:389",
+      "name": "Kind=Ghost, State=Hover, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1239",
+      "name": "Kind=Ghost, State=Hover, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Hover",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "13:1341",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "9:220",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1242",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:303",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1244",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:242",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1247",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:305",
+      "name": "Kind=Primary, State=Default, Size=Medium, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1249",
+      "name": "Kind=Primary, State=Default, Size=Large, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Primary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:265",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1252",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=True, Danger=False, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:307",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1254",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=True, Danger=False, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "False",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "10:267",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 84,
+      "height": 40
+    },
+    {
+      "id": "13:1257",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 100,
+      "height": 56
+    },
+    {
+      "id": "12:309",
+      "name": "Kind=Secondary, State=Default, Size=Medium, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1259",
+      "name": "Kind=Secondary, State=Default, Size=Large, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Secondary",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:241",
+      "name": "Kind=Ghost, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1262",
+      "name": "Kind=Ghost, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:391",
+      "name": "Kind=Ghost, State=Pressed, Size=Medium, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Medium",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1264",
+      "name": "Kind=Ghost, State=Pressed, Size=Large, Disabled=False, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Pressed",
+        "Size": "Large",
+        "Disabled": "False",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    },
+    {
+      "id": "12:243",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 40
+    },
+    {
+      "id": "13:1267",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=True, Danger=True, Label=True",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "True"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 36,
+      "height": 56
+    },
+    {
+      "id": "13:393",
+      "name": "Kind=Ghost, State=Default, Size=Medium, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Medium",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "id": "13:1269",
+      "name": "Kind=Ghost, State=Default, Size=Large, Disabled=True, Danger=True, Label=False",
+      "type": "COMPONENT",
+      "description": "",
+      "variantProperties": {
+        "Kind": "Ghost",
+        "State": "Default",
+        "Size": "Large",
+        "Disabled": "True",
+        "Danger": "True",
+        "Label": "False"
+      },
+      "componentProperties": null,
+      "componentPropertyDefinitions": null,
+      "width": 56,
+      "height": 56
+    }
+  ]
+}

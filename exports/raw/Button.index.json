@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "ai-fragmented-raw-v1",
+  "exportType": "figma-ai-fragmented-raw-index",
+  "exportedAt": "2026-05-25T23:40:23.225Z",
+  "fileName": "DS | Components",
+  "page": "WIP - Button",
+  "component": {
+    "id": "9:224",
+    "name": "Button",
+    "type": "COMPONENT_SET",
+    "description": "## Aliases\n- button\n- botón\n- btn\n- cta\n- call to action\n- llamada a la acción\n- action button\n- botón de acción\n- primary action\n- acción principal\n- submit\n- enviar\n- confirmar\n- aceptar\n- guardar\n- continuar\n- cancelar\n- cerrar",
+    "documentationLinks": [],
+    "componentPropertyDefinitions": {
+      "↩︎ Icon#23:0": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Icon#24:97": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "31:956",
+        "preferredValues": [
+          {
+            "type": "COMPONENT_SET",
+            "key": "4bf314b9aaacb89530c7414f708aac9418e2d6a6"
+          }
+        ]
+      },
+      "Kind": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Secondary",
+          "Ghost"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Hover",
+          "Pressed"
+        ]
+      },
+      "Size": {
+        "type": "VARIANT",
+        "defaultValue": "Medium",
+        "variantOptions": [
+          "Medium",
+          "Large"
+        ]
+      },
+      "Disabled": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Danger": {
+        "type": "VARIANT",
+        "defaultValue": "False",
+        "variantOptions": [
+          "False",
+          "True"
+        ]
+      },
+      "Label": {
+        "type": "VARIANT",
+        "defaultValue": "True",
+        "variantOptions": [
+          "True",
+          "False"
+        ]
+      }
+    }
+  },
+  "selectedNode": {
+    "id": "9:224",
+    "name": "Button",
+    "type": "COMPONENT_SET",
+    "variantProperties": null
+  },
+  "variantCount": 96,
+  "detectedVariantAxes": {
+    "Kind": [
+      "Primary",
+      "Secondary",
+      "Ghost"
+    ],
+    "State": [
+      "Default",
+      "Hover",
+      "Pressed"
+    ],
+    "Size": [
+      "Medium",
+      "Large"
+    ],
+    "Disabled": [
+      "False",
+      "True"
+    ],
+    "Danger": [
+      "False",
+      "True"
+    ],
+    "Label": [
+      "True",
+      "False"
+    ]
+  },
+  "files": {
+    "index": "Button.index.json",
+    "variants": "Button.variants.json",
+    "tokens": "Button.tokens.json",
+    "styles": "Button.styles.json",
+    "layout": "Button.layout.json",
+    "typography": "Button.typography.json",
+    "accessibility": "Button.accessibility.json",
+    "iconography": "Button.iconography.json",
+    "structure": "Button.structure.json"
+  }
+}
