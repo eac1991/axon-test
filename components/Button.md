@@ -12,7 +12,7 @@ Revisa:
 - Documentación
 - ID
 - Descripción (alias)
-- Tipografía completa: estilos de texto, font family, font weight, font size, line height, letter spacing, alineación, casing, decoración, variables y rangos mixtos
+- Tipografía completa en formato human-readable first: nombres de estilos primero e identificadores en segundo lugar
 
 Mantén el contexto del componente durante toda esta conversación para responder preguntas sobre él.
 
@@ -25,7 +25,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
 - **Descripción / Alias:** No disponible
 - **Archivo Figma:** DS | Components
 - **Página:** WIP - Button
-- **Exportado:** 2026-05-25T21:35:14.487Z
+- **Exportado:** 2026-05-25T21:42:53.287Z
 - **Elementos seleccionados:** 1
 
 ---
@@ -39,7 +39,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
 - Documentación
 - ID
 - Descripción (alias)
-- Tipografía completa
+- Tipografía human-readable first
 
 ---
 
@@ -54,22 +54,50 @@ Mantén el contexto del componente durante toda esta conversación para responde
 
 ---
 
-## Resumen de tipografía
+## Tipografía — resumen human-readable first
 
-| Nodo | Texto | Style ID | Familia | Peso | Tamaño | Line height | Letter spacing |
-|---|---|---|---|---:|---:|---|---|
-| Label | Label | `S:7274806b011ae418173e29868ce1e276d2e107fd,19:196` | Inter | 400 | 14 | {"unit":"PIXELS","value":22} | {"unit":"PIXELS","value":0} |
+| Nodo | Texto | Estilo tipográfico | ID del estilo | Familia | Peso | Tamaño | Line height | Letter spacing |
+|---|---|---|---|---|---:|---:|---|---|
+| Label | Label | **ds/typo/body/m** | `S:7274806b011ae418173e29868ce1e276d2e107fd,19:196` | Inter | 400 | 14 | {"unit":"PIXELS","value":22} | {"unit":"PIXELS","value":0} |
 
 
-## Datos completos de tipografía
+## Tipografía — detalle human-readable first
+
+### Texto 1: Label
+
+- **Contenido:** Label
+- **Estilo tipográfico:** ds/typo/body/m
+- **ID del estilo:** `S:7274806b011ae418173e29868ce1e276d2e107fd,19:196`
+- **Descripción del estilo:** No disponible
+- **Key del estilo:** `7274806b011ae418173e29868ce1e276d2e107fd`
+- **Remoto:** true
+- **Familia:** Inter
+- **Estilo de fuente:** Regular
+- **Peso:** 400
+- **Tamaño:** 14
+- **Line height:** `{"unit":"PIXELS","value":22}`
+- **Letter spacing:** `{"unit":"PIXELS","value":0}`
+- **Casing:** ORIGINAL
+- **Decoración:** NONE
+- **Alineación horizontal:** LEFT
+- **Alineación vertical:** TOP
+
+
+---
+
+## Tipografía — datos completos con IDs secundarios
 
 ```json
 [
   {
-    "id": "I14:1355;9:194",
-    "name": "Label",
-    "characters": "Label",
+    "nodeName": "Label",
+    "nodeId": "I14:1355;9:194",
+    "text": "Label",
+    "textStyleName": "ds/typo/body/m",
     "textStyleId": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196",
+    "textStyleDescription": null,
+    "textStyleKey": "7274806b011ae418173e29868ce1e276d2e107fd",
+    "textStyleRemote": true,
     "fontFamily": "Inter",
     "fontStyle": "Regular",
     "fontWeight": 400,
@@ -86,30 +114,51 @@ Mantén el contexto del componente durante toda esta conversación para responde
     "textDecoration": "NONE",
     "textAlignHorizontal": "LEFT",
     "textAlignVertical": "TOP",
-    "boundVariables": {
+    "boundVariablesHumanReadableFirst": {
       "fontFamily": [
         {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+          "name": "Variable alias",
+          "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151",
+          "type": "VARIABLE_ALIAS"
         }
       ],
       "fontStyle": null,
       "fontWeight": [
         {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+          "name": "Variable alias",
+          "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7",
+          "type": "VARIABLE_ALIAS"
         }
       ],
       "fontSize": [
         {
-          "type": "VARIABLE_ALIAS",
-          "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+          "name": "Variable alias",
+          "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165",
+          "type": "VARIABLE_ALIAS"
         }
       ],
       "lineHeight": [
         {
+          "name": "Variable alias",
+          "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174",
+          "type": "VARIABLE_ALIAS"
+        }
+      ],
+      "letterSpacing": [
+        {
+          "name": "Variable alias",
+          "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189",
+          "type": "VARIABLE_ALIAS"
+        }
+      ],
+      "paragraphSpacing": null,
+      "paragraphIndent": null
+    },
+    "rawBoundVariables": {
+      "fills": [
+        {
           "type": "VARIABLE_ALIAS",
-          "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+          "id": "VariableID:01cf4c070149d583e71b0c20ed775dd8e279e87b/23:293"
         }
       ],
       "letterSpacing": [
@@ -118,8 +167,30 @@ Mantén el contexto del componente durante toda esta conversación para responde
           "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189"
         }
       ],
-      "paragraphSpacing": null,
-      "paragraphIndent": null
+      "fontSize": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+        }
+      ],
+      "fontFamily": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+        }
+      ],
+      "lineHeight": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+        }
+      ],
+      "fontWeight": [
+        {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+        }
+      ]
     },
     "styledTextSegments": [
       {
@@ -174,19 +245,23 @@ Mantén el contexto del componente durante toda esta conversación para responde
 
 ```json
 {
-  "exportedAt": "2026-05-25T21:35:14.487Z",
+  "exportedAt": "2026-05-25T21:42:53.287Z",
   "fileName": "DS | Components",
   "page": "WIP - Button",
   "selectedComponentName": "Button",
   "selectedComponentId": "14:1355",
   "selectedComponentDescription": null,
   "selectionCount": 1,
-  "typographySummary": [
+  "typographySummaryHumanReadableFirst": [
     {
-      "id": "I14:1355;9:194",
-      "name": "Label",
-      "characters": "Label",
+      "nodeName": "Label",
+      "nodeId": "I14:1355;9:194",
+      "text": "Label",
+      "textStyleName": "ds/typo/body/m",
       "textStyleId": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196",
+      "textStyleDescription": null,
+      "textStyleKey": "7274806b011ae418173e29868ce1e276d2e107fd",
+      "textStyleRemote": true,
       "fontFamily": "Inter",
       "fontStyle": "Regular",
       "fontWeight": 400,
@@ -203,30 +278,51 @@ Mantén el contexto del componente durante toda esta conversación para responde
       "textDecoration": "NONE",
       "textAlignHorizontal": "LEFT",
       "textAlignVertical": "TOP",
-      "boundVariables": {
+      "boundVariablesHumanReadableFirst": {
         "fontFamily": [
           {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+            "name": "Variable alias",
+            "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151",
+            "type": "VARIABLE_ALIAS"
           }
         ],
         "fontStyle": null,
         "fontWeight": [
           {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+            "name": "Variable alias",
+            "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7",
+            "type": "VARIABLE_ALIAS"
           }
         ],
         "fontSize": [
           {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+            "name": "Variable alias",
+            "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165",
+            "type": "VARIABLE_ALIAS"
           }
         ],
         "lineHeight": [
           {
+            "name": "Variable alias",
+            "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174",
+            "type": "VARIABLE_ALIAS"
+          }
+        ],
+        "letterSpacing": [
+          {
+            "name": "Variable alias",
+            "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189",
+            "type": "VARIABLE_ALIAS"
+          }
+        ],
+        "paragraphSpacing": null,
+        "paragraphIndent": null
+      },
+      "rawBoundVariables": {
+        "fills": [
+          {
             "type": "VARIABLE_ALIAS",
-            "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+            "id": "VariableID:01cf4c070149d583e71b0c20ed775dd8e279e87b/23:293"
           }
         ],
         "letterSpacing": [
@@ -235,8 +331,30 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189"
           }
         ],
-        "paragraphSpacing": null,
-        "paragraphIndent": null
+        "fontSize": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+          }
+        ],
+        "fontFamily": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+          }
+        ],
+        "lineHeight": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+          }
+        ],
+        "fontWeight": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+          }
+        ]
       },
       "styledTextSegments": [
         {
@@ -382,11 +500,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
         "strokeWeight": 1,
         "strokeAlign": "INSIDE",
         "effects": [],
-        "cornerRadius": 0,
-        "topLeftRadius": 0,
-        "topRightRadius": 0,
-        "bottomRightRadius": 0,
-        "bottomLeftRadius": 0
+        "cornerRadius": 0
       },
       "layout": {
         "constraints": {
@@ -396,8 +510,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
         "layoutMode": "HORIZONTAL",
         "primaryAxisSizingMode": "AUTO",
         "counterAxisSizingMode": "FIXED",
-        "primaryAxisAlignItems": "CENTER",
-        "counterAxisAlignItems": "CENTER",
         "itemSpacing": 8,
         "paddingTop": 8,
         "paddingRight": 24,
@@ -407,7 +519,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
       "typography": {
         "isTextNode": false,
         "characters": null,
-        "textStyleId": null,
+        "textStyle": {
+          "name": "No text style",
+          "id": null,
+          "description": null,
+          "key": null,
+          "remote": null
+        },
         "fontName": null,
         "fontFamily": null,
         "fontStyle": null,
@@ -418,8 +536,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
         "paragraphSpacing": null,
         "paragraphIndent": null,
         "listSpacing": null,
-        "hangingPunctuation": null,
-        "hangingList": null,
         "textCase": null,
         "textDecoration": null,
         "textAutoResize": null,
@@ -429,7 +545,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
         "maxLines": null,
         "openTypeFeatures": null,
         "hyperlink": null,
-        "boundVariables": {
+        "boundVariablesHumanReadableFirst": {
           "fontFamily": null,
           "fontStyle": null,
           "fontWeight": null,
@@ -438,6 +554,38 @@ Mantén el contexto del componente durante toda esta conversación para responde
           "letterSpacing": null,
           "paragraphSpacing": null,
           "paragraphIndent": null
+        },
+        "rawBoundVariables": {
+          "itemSpacing": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8cbc44f61b5af84ca4112c8486d845255cb5b8db/19:133"
+          },
+          "paddingLeft": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21597c53c7bc558f36640be95470e070aa051122/19:130"
+          },
+          "paddingTop": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8cbc44f61b5af84ca4112c8486d845255cb5b8db/19:133"
+          },
+          "paddingRight": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:21597c53c7bc558f36640be95470e070aa051122/19:130"
+          },
+          "paddingBottom": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8cbc44f61b5af84ca4112c8486d845255cb5b8db/19:133"
+          },
+          "height": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8fd58ba3e823ff5a1bf850da096b632c0ca82f62/19:147"
+          },
+          "fills": [
+            {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:15bb4db566840e288e76b3707effa17a4415c4fb/24:2"
+            }
+          ]
         },
         "mixedTextSegments": null,
         "styledTextSegments": null
@@ -484,7 +632,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
         "fillStyleId": "",
         "strokeStyleId": "",
         "effectStyleId": "",
-        "textStyleId": null
+        "textStyle": {
+          "name": "No text style",
+          "id": null,
+          "description": null,
+          "key": null,
+          "remote": null
+        }
       },
       "accessibilityHints": {
         "inferredRole": "button",
@@ -523,11 +677,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "strokeWeight": 1,
             "strokeAlign": "INSIDE",
             "effects": [],
-            "cornerRadius": 0,
-            "topLeftRadius": 0,
-            "topRightRadius": 0,
-            "bottomRightRadius": 0,
-            "bottomLeftRadius": 0
+            "cornerRadius": 0
           },
           "layout": {
             "constraints": {
@@ -537,8 +687,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "layoutMode": "HORIZONTAL",
             "primaryAxisSizingMode": "AUTO",
             "counterAxisSizingMode": "AUTO",
-            "primaryAxisAlignItems": "MIN",
-            "counterAxisAlignItems": "CENTER",
             "itemSpacing": 10,
             "paddingTop": 0,
             "paddingRight": 0,
@@ -548,7 +696,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
           "typography": {
             "isTextNode": false,
             "characters": null,
-            "textStyleId": null,
+            "textStyle": {
+              "name": "No text style",
+              "id": null,
+              "description": null,
+              "key": null,
+              "remote": null
+            },
             "fontName": null,
             "fontFamily": null,
             "fontStyle": null,
@@ -559,8 +713,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "paragraphSpacing": null,
             "paragraphIndent": null,
             "listSpacing": null,
-            "hangingPunctuation": null,
-            "hangingList": null,
             "textCase": null,
             "textDecoration": null,
             "textAutoResize": null,
@@ -570,7 +722,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "maxLines": null,
             "openTypeFeatures": null,
             "hyperlink": null,
-            "boundVariables": {
+            "boundVariablesHumanReadableFirst": {
               "fontFamily": null,
               "fontStyle": null,
               "fontWeight": null,
@@ -580,6 +732,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
               "paragraphSpacing": null,
               "paragraphIndent": null
             },
+            "rawBoundVariables": {},
             "mixedTextSegments": null,
             "styledTextSegments": null
           },
@@ -592,7 +745,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "fillStyleId": "",
             "strokeStyleId": "",
             "effectStyleId": "",
-            "textStyleId": null
+            "textStyle": {
+              "name": "No text style",
+              "id": null,
+              "description": null,
+              "key": null,
+              "remote": null
+            }
           },
           "accessibilityHints": {
             "inferredRole": "icon",
@@ -639,11 +798,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
                 "strokeWeight": 1,
                 "strokeAlign": "INSIDE",
                 "effects": [],
-                "cornerRadius": 0,
-                "topLeftRadius": 0,
-                "topRightRadius": 0,
-                "bottomRightRadius": 0,
-                "bottomLeftRadius": 0
+                "cornerRadius": 0
               },
               "layout": {
                 "constraints": {
@@ -653,8 +808,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
                 "layoutMode": "NONE",
                 "primaryAxisSizingMode": "AUTO",
                 "counterAxisSizingMode": "FIXED",
-                "primaryAxisAlignItems": "MIN",
-                "counterAxisAlignItems": "MIN",
                 "itemSpacing": 0,
                 "paddingTop": 0,
                 "paddingRight": 0,
@@ -664,7 +817,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
               "typography": {
                 "isTextNode": false,
                 "characters": null,
-                "textStyleId": null,
+                "textStyle": {
+                  "name": "No text style",
+                  "id": null,
+                  "description": null,
+                  "key": null,
+                  "remote": null
+                },
                 "fontName": null,
                 "fontFamily": null,
                 "fontStyle": null,
@@ -675,8 +834,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
                 "paragraphSpacing": null,
                 "paragraphIndent": null,
                 "listSpacing": null,
-                "hangingPunctuation": null,
-                "hangingList": null,
                 "textCase": null,
                 "textDecoration": null,
                 "textAutoResize": null,
@@ -686,7 +843,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
                 "maxLines": null,
                 "openTypeFeatures": null,
                 "hyperlink": null,
-                "boundVariables": {
+                "boundVariablesHumanReadableFirst": {
                   "fontFamily": null,
                   "fontStyle": null,
                   "fontWeight": null,
@@ -696,6 +853,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
                   "paragraphSpacing": null,
                   "paragraphIndent": null
                 },
+                "rawBoundVariables": {},
                 "mixedTextSegments": null,
                 "styledTextSegments": null
               },
@@ -708,7 +866,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
                 "fillStyleId": "",
                 "strokeStyleId": "",
                 "effectStyleId": "",
-                "textStyleId": null
+                "textStyle": {
+                  "name": "No text style",
+                  "id": null,
+                  "description": null,
+                  "key": null,
+                  "remote": null
+                }
               },
               "accessibilityHints": {
                 "inferredRole": "unknown",
@@ -763,11 +927,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
                     "strokeWeight": 1,
                     "strokeAlign": "INSIDE",
                     "effects": [],
-                    "cornerRadius": 0,
-                    "topLeftRadius": null,
-                    "topRightRadius": null,
-                    "bottomRightRadius": null,
-                    "bottomLeftRadius": null
+                    "cornerRadius": 0
                   },
                   "layout": {
                     "constraints": {
@@ -777,8 +937,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
                     "layoutMode": null,
                     "primaryAxisSizingMode": null,
                     "counterAxisSizingMode": null,
-                    "primaryAxisAlignItems": null,
-                    "counterAxisAlignItems": null,
                     "itemSpacing": null,
                     "paddingTop": null,
                     "paddingRight": null,
@@ -788,7 +946,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
                   "typography": {
                     "isTextNode": false,
                     "characters": null,
-                    "textStyleId": null,
+                    "textStyle": {
+                      "name": "No text style",
+                      "id": null,
+                      "description": null,
+                      "key": null,
+                      "remote": null
+                    },
                     "fontName": null,
                     "fontFamily": null,
                     "fontStyle": null,
@@ -799,8 +963,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
                     "paragraphSpacing": null,
                     "paragraphIndent": null,
                     "listSpacing": null,
-                    "hangingPunctuation": null,
-                    "hangingList": null,
                     "textCase": null,
                     "textDecoration": null,
                     "textAutoResize": null,
@@ -810,7 +972,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
                     "maxLines": null,
                     "openTypeFeatures": null,
                     "hyperlink": null,
-                    "boundVariables": {
+                    "boundVariablesHumanReadableFirst": {
                       "fontFamily": null,
                       "fontStyle": null,
                       "fontWeight": null,
@@ -819,6 +981,14 @@ Mantén el contexto del componente durante toda esta conversación para responde
                       "letterSpacing": null,
                       "paragraphSpacing": null,
                       "paragraphIndent": null
+                    },
+                    "rawBoundVariables": {
+                      "fills": [
+                        {
+                          "type": "VARIABLE_ALIAS",
+                          "id": "VariableID:01cf4c070149d583e71b0c20ed775dd8e279e87b/23:293"
+                        }
+                      ]
                     },
                     "mixedTextSegments": null,
                     "styledTextSegments": null
@@ -839,7 +1009,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
                     "fillStyleId": "",
                     "strokeStyleId": "",
                     "effectStyleId": "",
-                    "textStyleId": null
+                    "textStyle": {
+                      "name": "No text style",
+                      "id": null,
+                      "description": null,
+                      "key": null,
+                      "remote": null
+                    }
                   },
                   "accessibilityHints": {
                     "inferredRole": "unknown",
@@ -899,11 +1075,7 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "strokeWeight": 1,
             "strokeAlign": "OUTSIDE",
             "effects": [],
-            "cornerRadius": null,
-            "topLeftRadius": null,
-            "topRightRadius": null,
-            "bottomRightRadius": null,
-            "bottomLeftRadius": null
+            "cornerRadius": null
           },
           "layout": {
             "constraints": {
@@ -913,8 +1085,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "layoutMode": null,
             "primaryAxisSizingMode": null,
             "counterAxisSizingMode": null,
-            "primaryAxisAlignItems": null,
-            "counterAxisAlignItems": null,
             "itemSpacing": null,
             "paddingTop": null,
             "paddingRight": null,
@@ -924,7 +1094,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
           "typography": {
             "isTextNode": true,
             "characters": "Label",
-            "textStyleId": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196",
+            "textStyle": {
+              "name": "ds/typo/body/m",
+              "id": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196",
+              "description": null,
+              "key": "7274806b011ae418173e29868ce1e276d2e107fd",
+              "remote": true
+            },
             "fontName": {
               "family": "Inter",
               "style": "Regular"
@@ -944,8 +1120,6 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "paragraphSpacing": 0,
             "paragraphIndent": 0,
             "listSpacing": 0,
-            "hangingPunctuation": false,
-            "hangingList": false,
             "textCase": "ORIGINAL",
             "textDecoration": "NONE",
             "textAutoResize": "WIDTH_AND_HEIGHT",
@@ -955,30 +1129,51 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "maxLines": null,
             "openTypeFeatures": {},
             "hyperlink": null,
-            "boundVariables": {
+            "boundVariablesHumanReadableFirst": {
               "fontFamily": [
                 {
-                  "type": "VARIABLE_ALIAS",
-                  "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+                  "name": "Variable alias",
+                  "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151",
+                  "type": "VARIABLE_ALIAS"
                 }
               ],
               "fontStyle": null,
               "fontWeight": [
                 {
-                  "type": "VARIABLE_ALIAS",
-                  "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+                  "name": "Variable alias",
+                  "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7",
+                  "type": "VARIABLE_ALIAS"
                 }
               ],
               "fontSize": [
                 {
-                  "type": "VARIABLE_ALIAS",
-                  "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+                  "name": "Variable alias",
+                  "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165",
+                  "type": "VARIABLE_ALIAS"
                 }
               ],
               "lineHeight": [
                 {
+                  "name": "Variable alias",
+                  "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174",
+                  "type": "VARIABLE_ALIAS"
+                }
+              ],
+              "letterSpacing": [
+                {
+                  "name": "Variable alias",
+                  "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189",
+                  "type": "VARIABLE_ALIAS"
+                }
+              ],
+              "paragraphSpacing": null,
+              "paragraphIndent": null
+            },
+            "rawBoundVariables": {
+              "fills": [
+                {
                   "type": "VARIABLE_ALIAS",
-                  "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+                  "id": "VariableID:01cf4c070149d583e71b0c20ed775dd8e279e87b/23:293"
                 }
               ],
               "letterSpacing": [
@@ -987,8 +1182,30 @@ Mantén el contexto del componente durante toda esta conversación para responde
                   "id": "VariableID:10a942f64197a33acf331c93cd67df25ec55a095/19:189"
                 }
               ],
-              "paragraphSpacing": null,
-              "paragraphIndent": null
+              "fontSize": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:19fc85db9d12a612f0c5cd9e2c269f240ba7c522/19:165"
+                }
+              ],
+              "fontFamily": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:2aa7e51c3e789aa958a03f1b3d3ec3c7d435298c/19:151"
+                }
+              ],
+              "lineHeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:44d590734fb9895f2ac150048034f2d0651a6d58/19:174"
+                }
+              ],
+              "fontWeight": [
+                {
+                  "type": "VARIABLE_ALIAS",
+                  "id": "VariableID:3f6d3eb3aaae67632aa71affc1425e4007c05a42/6:7"
+                }
+              ]
             },
             "mixedTextSegments": {
               "fontName": {
@@ -1119,7 +1336,13 @@ Mantén el contexto del componente durante toda esta conversación para responde
             "fillStyleId": "",
             "strokeStyleId": "",
             "effectStyleId": "",
-            "textStyleId": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196"
+            "textStyle": {
+              "name": "ds/typo/body/m",
+              "id": "S:7274806b011ae418173e29868ce1e276d2e107fd,19:196",
+              "description": null,
+              "key": "7274806b011ae418173e29868ce1e276d2e107fd",
+              "remote": true
+            }
           },
           "accessibilityHints": {
             "inferredRole": "unknown",
