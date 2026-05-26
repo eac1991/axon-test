@@ -1,80 +1,155 @@
-# Button Component - Rules
-
-## Description
-Buttons allow users to perform an action or navigate to another page. They are used to guide user actions within flows and highlight primary interactions.
+# Button Component Rules (Axon Deterministic Version)
 
 ---
 
-## Guidelines
+## 🧠 PURPOSE
 
-- Primary button (Kind: Primary) is used for main actions in the interface.
-- Secondary button (Kind: Secondary) is used for secondary actions.
-- Secondary button must only be used when a Primary button exists in the same context.
-- Ghost button (Kind: Ghost) is used for low-emphasis or residual actions.
-- Ghost buttons can be icon-only, label-only, or icon + label.
+This file defines STRICT rules for the Button component.
 
-### Layout constraints
-- Button height is fixed and cannot be modified.
-- Button width is adaptive based on content.
-- Buttons can optionally expand to full width using fullWidth property.
-- Internal paddings are fixed and cannot be modified.
-- Border width is fixed and cannot be modified.
+Rules are deterministic and MUST be interpreted as final truth.
 
-### Icons
-- Icons are optional in all variants.
-- Icon size is fixed at 20x20px.
-- Icons cannot be resized.
-
-### Labels
-- Labels must not include punctuation.
-- Labels should use verbs.
-- Avoid nouns or adjectives as primary labels.
-
-### Colors
-- Colors are fully controlled by design tokens.
-- Tokens cannot be overridden manually.
+If a rule exists → it overrides all other sources.
 
 ---
 
-## Danger State Rules
+## 🚫 COLOR RULES (CRITICAL)
 
-When Danger = true:
-- Background, border, label, and icon use token: ds/color/alt/red-high
-- Applies to Primary, Secondary, and Ghost variants depending on state
+### Q: Can colors be modified manually?
 
----
+❌ NO
 
-## Behaviours
+- Button colors cannot be overridden manually
+- Colors are fully controlled by design tokens
+- No direct color values (HEX / RGB / CSS) are allowed
 
-- Default spacing between buttons: 8px
-- Ghost buttons spacing: 16px
-- Default width is hug content
-- Buttons can expand to full container width
-
-### Keyboard interaction
-- Enter / Space triggers action
-- Tab navigates forward
-- Shift + Tab navigates backward
-- Focus state applies blue outline (ds/color/alt/blue-high)
+✔ ONLY EXCEPTION:
+- Focus state uses predefined token:
+  ds/color/alt/blue-high
 
 ---
 
-## Properties
+## 🎨 TOKEN RULES
 
-- kind
-- disabled
-- loading
-- fullWidth
+### Q: Can tokens be overridden?
+
+❌ NO
+
+- Design tokens are immutable at component level
+- Tokens can only be consumed, not modified
+- No custom token injection is allowed
+
+---
+
+## 🧩 BORDER RULES
+
+### Q: Can border width be changed?
+
+❌ NO
+
+- Border width is fixed
+- Applies to all variants
+- Only color may vary via tokens
+
+---
+
+## 📐 SIZE RULES
+
+### Q: Can size or height be changed?
+
+❌ NO
+
+- Height is fixed
+- Width is content-driven only
+- fullWidth is the only exception
+
+---
+
+## 🧱 LAYOUT RULES
+
+### Q: Can padding be changed?
+
+❌ NO
+
+- Internal padding is fixed
+- Must follow design system spacing rules
+
+---
+
+## 🧠 ICON RULES
+
+### Q: Can icons be modified?
+
+✔ YES (LIMITED)
+
+- Icon can be replaced
+- Icon size is ALWAYS 20x20px
+- Icon cannot be resized
+
+---
+
+## 🏷 LABEL RULES
+
+### Q: Can label styles be changed?
+
+❌ NO
+
+- Typography is controlled by system tokens
+- No custom font, size, or color allowed
+
+### Q: Can label text include punctuation?
+
+❌ NO
+
+- Labels must use verbs only
+- No punctuation allowed
+
+---
+
+## ⚠️ DANGER STATE RULES
+
+### Q: What happens when Danger = true?
+
+✔ Applies fixed token:
+
+ds/color/alt/red-high
+
+Affects:
+- background
+- border
 - label
 - icon
-- onClick
-- type
-- ariaLabel
-- tabIndex
-- className
-- testId
 
 ---
 
-## Accessibility
-- ariaLabel is required when label is not descriptive
+## 🧭 KIND RULES
+
+- Primary → main action only
+- Secondary → requires Primary in same context
+- Ghost → low emphasis actions
+
+---
+
+## ⌨️ INTERACTION RULES
+
+- Enter / Space → trigger action
+- Tab / Shift+Tab → navigation
+- Focus → blue outline using ds/color/alt/blue-high
+
+---
+
+## 🧠 FINAL DECISION RULE
+
+When asked a question:
+
+1. Match rule category
+2. Return YES / NO based on rule
+3. If rule exists → DO NOT infer
+4. If rule is missing → assume NOT ALLOWED
+
+---
+
+## 🚫 GLOBAL OVERRIDE RULE
+
+No external design system knowledge is allowed.
+
+Only this file defines Button behavior.
