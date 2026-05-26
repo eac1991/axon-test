@@ -1,155 +1,159 @@
-# Button Component Rules (Axon Deterministic Version)
+# Button Component Rules (Axon v13 Enhanced)
 
 ---
 
 ## 🧠 PURPOSE
 
-This file defines STRICT rules for the Button component.
+This file defines deterministic rules for the Button component.
 
-Rules are deterministic and MUST be interpreted as final truth.
-
-If a rule exists → it overrides all other sources.
+Rules are strict, executable, and override all other sources.
 
 ---
 
-## 🚫 COLOR RULES (CRITICAL)
+# 🚫 COLOR RULES
 
-### Q: Can colors be modified manually?
-
-❌ NO
-
-- Button colors cannot be overridden manually
 - Colors are fully controlled by design tokens
-- No direct color values (HEX / RGB / CSS) are allowed
-
-✔ ONLY EXCEPTION:
-- Focus state uses predefined token:
-  ds/color/alt/blue-high
+- No manual color overrides allowed
+- Only exception: focus state uses ds/color/alt/blue-high
+- Danger state uses ds/color/alt/red-high
 
 ---
 
-## 🎨 TOKEN RULES
+# 🎨 TOKEN RULES
 
-### Q: Can tokens be overridden?
-
-❌ NO
-
-- Design tokens are immutable at component level
-- Tokens can only be consumed, not modified
-- No custom token injection is allowed
+- Tokens are immutable
+- Only consumption allowed
+- No overrides at component level
+- Inheritance applies if no explicit mapping exists
 
 ---
 
-## 🧩 BORDER RULES
-
-### Q: Can border width be changed?
-
-❌ NO
+# 🧩 BORDER RULES
 
 - Border width is fixed
-- Applies to all variants
-- Only color may vary via tokens
+- Border color controlled by tokens
+- No override of stroke width allowed
 
 ---
 
-## 📐 SIZE RULES
-
-### Q: Can size or height be changed?
-
-❌ NO
+# 📐 SIZE RULES
 
 - Height is fixed
-- Width is content-driven only
-- fullWidth is the only exception
+- Width is content-driven (hug behavior)
+- fullWidth is allowed override
 
 ---
 
-## 🧱 LAYOUT RULES
-
-### Q: Can padding be changed?
-
-❌ NO
+# 🧱 LAYOUT RULES
 
 - Internal padding is fixed
-- Must follow design system spacing rules
+- Spacing system is immutable
+- Button adapts to content size only
 
 ---
 
-## 🧠 ICON RULES
+# 🧠 TEXT BEHAVIOUR (RESTORED CRITICAL RULES)
 
-### Q: Can icons be modified?
+## Overflow behavior
 
-✔ YES (LIMITED)
+- Text grows horizontally by default
+- No truncation unless explicitly defined in system
+- Button must expand before wrapping text
 
-- Icon can be replaced
-- Icon size is ALWAYS 20x20px
-- Icon cannot be resized
+## Wrapping rules
+
+- Text wraps only if container forces constraint
+- No manual line breaks allowed
+- Label must remain single logical action
 
 ---
 
-## 🏷 LABEL RULES
+# 🧩 GROUPING / SPACING BEHAVIOUR (RESTORED)
 
-### Q: Can label styles be changed?
+## Button groups
 
-❌ NO
+- Default spacing between buttons: 8px
+- Ghost buttons spacing: 16px
 
-- Typography is controlled by system tokens
-- No custom font, size, or color allowed
+## Group layout rules
 
-### Q: Can label text include punctuation?
+- Primary + Secondary buttons can be grouped
+- Ghost buttons are visually separated
+- Groups must maintain alignment baseline
 
-❌ NO
+---
+
+# 🧠 ICON RULES
+
+- Icon optional in all variants
+- Icon size fixed: 20x20px
+- Icons cannot be resized
+- Icon position: leading only (default behavior)
+
+---
+
+# 🏷 LABEL RULES
 
 - Labels must use verbs only
 - No punctuation allowed
+- Labels are not stylable manually
+- Typography comes from design system tokens only
 
 ---
 
-## ⚠️ DANGER STATE RULES
+# ⚠️ DANGER STATE
 
-### Q: What happens when Danger = true?
+When danger=true:
 
-✔ Applies fixed token:
+- Background → ds/color/alt/red-high
+- Border → ds/color/alt/red-high
+- Label → ds/color/alt/red-high
+- Icon → ds/color/alt/red-high
 
-ds/color/alt/red-high
-
-Affects:
-- background
-- border
-- label
-- icon
+Applies to all variants unless overridden explicitly.
 
 ---
 
-## 🧭 KIND RULES
+# 🧭 VARIANT RULES
 
-- Primary → main action only
-- Secondary → requires Primary in same context
-- Ghost → low emphasis actions
+## Primary
+- Main action only
+- Highest emphasis
+
+## Secondary
+- Requires Primary in same context
+- Never used alone
+
+## Ghost
+- Low emphasis actions
+- Can be icon-only or label-only
 
 ---
 
-## ⌨️ INTERACTION RULES
+# ⌨️ INTERACTION RULES
 
 - Enter / Space → trigger action
-- Tab / Shift+Tab → navigation
-- Focus → blue outline using ds/color/alt/blue-high
+- Tab → next element
+- Shift + Tab → previous element
 
 ---
 
-## 🧠 FINAL DECISION RULE
+# 🎯 FOCUS STATE
 
-When asked a question:
-
-1. Match rule category
-2. Return YES / NO based on rule
-3. If rule exists → DO NOT infer
-4. If rule is missing → assume NOT ALLOWED
+- Focus uses ds/color/alt/blue-high
+- Border width remains fixed (0.5px)
+- Focus does not modify layout
 
 ---
 
-## 🚫 GLOBAL OVERRIDE RULE
+# 🧠 ACCESSIBILITY
 
-No external design system knowledge is allowed.
+- ariaLabel required when label is not descriptive
+- Keyboard navigation must be supported
+- Button must remain operable without pointer interaction
 
-Only this file defines Button behavior.
+---
+
+# 🚫 GLOBAL RULE
+
+No behavior is allowed unless explicitly defined in this file or inherited from design system tokens.
