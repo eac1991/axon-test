@@ -1,16 +1,12 @@
-# Button Component Rules (Axon v15 Execution Engine)
+# Button Component Rules (Axon v16 Engine + Semantic Router)
 
 ---
 
 # 🧠 CORE PRINCIPLE
 
-This file is an EXECUTION ENGINE, not documentation.
+This file is an EXECUTION ENGINE.
 
-Every rule MUST be interpreted as deterministic logic.
-
-If a rule exists → it is executable.
-
-No descriptive language is allowed in decision-critical sections.
+All rules are deterministic and must be executed, not interpreted.
 
 ---
 
@@ -27,12 +23,9 @@ RESOLUTION:
 - Danger state: ds/color/alt/red-high
 
 PRIORITY:
-1. State tokens (danger, focus)
+1. State tokens
 2. Component tokens
 3. Global tokens
-
-FINAL:
-- No direct color values allowed
 
 ---
 
@@ -44,13 +37,12 @@ CONDITION:
 - Any property requires styling token
 
 RESOLUTION ORDER:
-1. Component tokens (Button.tokens.json)
-2. Variant overrides (Button.variants.json)
-3. Global tokens (/tokens/tokens.json)
+1. Component tokens
+2. Variant overrides
+3. Global tokens
 
 RULE:
 - If no override exists → inherit base token
-- Never return “not defined” if fallback exists
 
 ---
 
@@ -59,173 +51,144 @@ RULE:
 CASE: Border styling
 
 CONDITION:
-- Button border is evaluated
+- Button border evaluated
 
 RESOLUTION:
-- Border width = FIXED (no overrides allowed)
-- Border color = token-based only
-
-PRIORITY:
-- State override > component default > global token
-
-FINAL:
-- Border width cannot change under any condition
+- Border width FIXED
+- Border color token-based only
 
 ---
 
 # 📐 SIZE ENGINE
 
-CASE: Button sizing behavior
+CASE: Button sizing
 
 CONDITION:
-- Layout calculation for width/height
+- Layout calculation
 
 RESOLUTION:
-- Height = FIXED
-- Width = CONTENT-DRIVEN (hug behavior)
-- fullWidth = allowed override
-
-PRIORITY:
-- fullWidth overrides hug behavior only
+- Height FIXED
+- Width CONTENT-DRIVEN
+- fullWidth allowed override
 
 ---
 
 # 🧱 LAYOUT ENGINE
 
-CASE: Button layout behavior
+CASE: Layout behavior
 
 CONDITION:
-- Component rendering layout rules
+- rendering rules
 
 RESOLUTION:
-- Padding is FIXED
-- Spacing is SYSTEM CONTROLLED
-- Layout adapts to content only
-
-FINAL:
-- No manual layout overrides allowed
+- padding FIXED
+- spacing system controlled
+- layout adapts to content only
 
 ---
 
 # 🧠 TEXT OVERFLOW ENGINE
 
-CASE: Text exceeds available width
+CASE: Text exceeds width
 
 CONDITION:
 - content width > container width
 
 RESOLUTION:
-- Expand button horizontally FIRST
-- Wrap text only if constrained by parent container
-- NEVER truncate by default
+- expand horizontally first
+- wrap only if constrained
+- no truncation by default
 
 PRIORITY:
-1. Expansion
-2. Wrapping
-3. Truncation (forbidden unless explicitly defined)
-
-FINAL STATE:
-- Text must remain fully visible unless constrained externally
+1. expansion
+2. wrapping
+3. truncation (forbidden)
 
 ---
 
 # 🧩 BUTTON GROUP ENGINE
 
-CASE: Multiple buttons in same container
+CASE: Button grouping
 
 CONDITION:
-- sibling Button components detected
+- multiple buttons in same container
 
 RESOLUTION:
-- Apply spacing rules:
+- spacing:
   - default = 8px
-  - ghost variant = 16px
+  - ghost = 16px
 
-ALIGNMENT RULE:
-- baseline alignment mandatory
-- height consistency required
-
-PRIORITY:
-- Variant spacing overrides default spacing
-
-FINAL:
-- Groups must remain visually aligned and consistent
+ALIGNMENT:
+- baseline required
+- equal height alignment required
 
 ---
 
 # 🧠 ICON ENGINE
 
-CASE: Icon usage in Button
+CASE: icon usage
 
 CONDITION:
-- icon property present
+- icon present
 
 RESOLUTION:
-- Icon size fixed: 20x20px
-- Position: leading only
-- Replacement allowed
-- Resizing forbidden
+- size 20x20px fixed
+- leading only
+- no resizing
 
 ---
 
 # 🏷 LABEL ENGINE
 
-CASE: Button label rendering
+CASE: label rendering
 
 CONDITION:
-- text label is present
+- text label present
 
 RESOLUTION:
-- Must use verbs only
-- No punctuation allowed
-- Typography controlled by tokens only
+- verbs only
+- no punctuation
+- token-based typography only
 
 ---
 
 # ⚠️ DANGER ENGINE
 
-CASE: danger=true state
+CASE: danger=true
 
 CONDITION:
-- Button marked as danger state
+- danger state active
 
 RESOLUTION:
-- Apply ds/color/alt/red-high to:
-  - background
-  - border
-  - label
-  - icon
-
-PRIORITY:
-- Danger overrides all other color rules
+- apply ds/color/alt/red-high to all surfaces
 
 ---
 
 # 🧭 VARIANT ENGINE
 
-CASE: kind resolution
+CASE: kind
 
 CONDITION:
-- Button kind is defined
+- variant defined
 
 RESOLUTION:
-- Primary: main action only
-- Secondary: requires Primary context
-- Ghost: low emphasis / optional action
+- primary = main action
+- secondary = requires primary context
+- ghost = low emphasis
 
 ---
 
 # ⌨️ INTERACTION ENGINE
 
-CASE: keyboard interaction
+CASE: keyboard input
 
 CONDITION:
-- user interacts via keyboard
+- user interaction
 
 RESOLUTION:
-- Enter / Space → trigger action
-- Tab → next element
-- Shift+Tab → previous element
+- enter/space trigger
+- tab navigation
+- shift+tab back
 
 ---
 
@@ -234,31 +197,72 @@ RESOLUTION:
 CASE: focus state
 
 CONDITION:
-- Button receives focus
+- element focused
 
 RESOLUTION:
-- Apply ds/color/alt/blue-high
-- Border width fixed at 0.5px
-- Layout must NOT change
+- ds/color/alt/blue-high
+- border 0.5px fixed
 
 ---
 
 # 🧠 ACCESSIBILITY ENGINE
 
-CASE: accessibility evaluation
+CASE: accessibility
 
 CONDITION:
-- Button rendered in UI
+- component rendered
 
 RESOLUTION:
-- ariaLabel required if label is not descriptive
-- Must support full keyboard navigation
-- Must be operable without pointer input
+- ariaLabel required if label unclear
+- full keyboard support required
 
 ---
 
-# 🚫 GLOBAL EXECUTION RULE
+# 🚫 GLOBAL RULE
 
-ONLY rules defined in this engine or inherited tokens are valid.
+No behavior outside this engine is valid.
 
-Everything else is INVALID as a source of behavior.
+---
+
+# 🧠 SEMANTIC ROUTING LAYER (CRITICAL FIX)
+
+---
+
+## 🎯 PURPOSE
+
+Maps user language → correct execution engine.
+
+---
+
+## 🔑 KEYWORD MAPPING (MANDATORY)
+
+IF user query contains:
+
+- group
+- groups
+- grouping
+- agrupación
+- botones juntos
+- spacing between buttons
+
+→ USE BUTTON GROUP ENGINE
+
+---
+
+## 🚫 FORBIDDEN BEHAVIOR
+
+Never fallback to generic layout rules if semantic match exists.
+
+---
+
+## 🧠 PRIORITY ORDER
+
+1. Semantic routing layer
+2. Specific engine
+3. Global fallback (last resort only)
+
+---
+
+## 🎯 RESULT
+
+All “grouping” queries MUST resolve to Button Group Engine.
