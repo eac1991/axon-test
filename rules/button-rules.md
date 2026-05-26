@@ -1,4 +1,4 @@
-# Button Component Rules (Axon v13 Enhanced)
+# Button Component Rules (Axon v14 Enhanced)
 
 ---
 
@@ -52,34 +52,58 @@ Rules are strict, executable, and override all other sources.
 
 ---
 
-# 🧠 TEXT BEHAVIOUR (RESTORED CRITICAL RULES)
+# 🧠 TEXT OVERFLOW BEHAVIOR (DETERMINISTIC)
 
-## Overflow behavior
+## RULE: TEXT EXPANSION
 
-- Text grows horizontally by default
-- No truncation unless explicitly defined in system
-- Button must expand before wrapping text
+IF content exceeds available width:
 
-## Wrapping rules
+→ Button MUST expand horizontally (hug behavior)
+→ Text MUST NOT be truncated by default
 
-- Text wraps only if container forces constraint
-- No manual line breaks allowed
-- Label must remain single logical action
+## RULE: WRAPPING
+
+IF container forces width constraint:
+
+→ Text MAY wrap to next line
+→ Wrapping is passive (no manual line breaks allowed)
+
+## RULE: PRIORITY ORDER
+
+Expansion > Wrapping > Truncation
+
+→ Truncation is NOT allowed unless explicitly defined elsewhere
 
 ---
 
-# 🧩 GROUPING / SPACING BEHAVIOUR (RESTORED)
+# 🧩 BUTTON GROUP BEHAVIOR (DETERMINISTIC)
 
-## Button groups
+## RULE: DEFAULT GROUP SPACING
 
-- Default spacing between buttons: 8px
-- Ghost buttons spacing: 16px
+IF buttons are in a group:
 
-## Group layout rules
+→ spacing MUST be 8px
 
-- Primary + Secondary buttons can be grouped
-- Ghost buttons are visually separated
-- Groups must maintain alignment baseline
+## RULE: GHOST VARIANT SPACING
+
+IF button kind = Ghost:
+
+→ spacing MUST be 16px from other buttons
+
+## RULE: GROUP COMPOSITION
+
+Allowed combinations:
+
+✔ Primary + Secondary
+✔ Primary + Ghost
+✔ Secondary + Ghost
+
+## RULE: ALIGNMENT
+
+All buttons in a group:
+
+→ MUST align baseline
+→ MUST maintain consistent height alignment
 
 ---
 
@@ -88,7 +112,7 @@ Rules are strict, executable, and override all other sources.
 - Icon optional in all variants
 - Icon size fixed: 20x20px
 - Icons cannot be resized
-- Icon position: leading only (default behavior)
+- Icon position: leading only
 
 ---
 
@@ -96,8 +120,7 @@ Rules are strict, executable, and override all other sources.
 
 - Labels must use verbs only
 - No punctuation allowed
-- Labels are not stylable manually
-- Typography comes from design system tokens only
+- Typography controlled by design system tokens only
 
 ---
 
@@ -118,15 +141,12 @@ Applies to all variants unless overridden explicitly.
 
 ## Primary
 - Main action only
-- Highest emphasis
 
 ## Secondary
 - Requires Primary in same context
-- Never used alone
 
 ## Ghost
 - Low emphasis actions
-- Can be icon-only or label-only
 
 ---
 
@@ -141,16 +161,14 @@ Applies to all variants unless overridden explicitly.
 # 🎯 FOCUS STATE
 
 - Focus uses ds/color/alt/blue-high
-- Border width remains fixed (0.5px)
-- Focus does not modify layout
+- Border width fixed at 0.5px
 
 ---
 
 # 🧠 ACCESSIBILITY
 
 - ariaLabel required when label is not descriptive
-- Keyboard navigation must be supported
-- Button must remain operable without pointer interaction
+- Must support full keyboard navigation
 
 ---
 
